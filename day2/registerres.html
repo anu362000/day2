@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration</title>
+    <style>
+        /* Reset some default browser styles */
+        body, h1, h2, h3, ul, li, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style the container */
+        body {
+            font-family: sans-serif;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Style the registration form */
+        .awesome-form {
+            background: lavender;
+            width: 100%;
+            max-width: 400px;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        .awesome-form:hover {
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+        }
+
+        .awesome-form h1 {
+            margin-bottom: 30px;
+            color: #333;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            background: none;
+            border: none;
+            border-bottom: 1px solid black;
+            border-radius: 0;
+            box-shadow: none;
+            width: 100%;
+        }
+
+        .form-control:focus {
+            border-color: #007BFF;
+            box-shadow: 0px 0px 5px rgba(0,123,255,0.5);
+            outline: none;
+        }
+
+        /* Add some spacing between form fields */
+        .form-group:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        /* Style the button */
+        .btn {
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            background: #007BFF;
+            color: black;
+        }
+
+        .btn:hover {
+            background: purple;
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 768px) {
+            .awesome-form {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-5">
+    <div class="row">
+        <form class="awesome-form">
+            <h1>Register Here</h1>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="First Name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+                DOB <input type="date" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+                <select class="form-control">
+                    <option>Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Address">
+            </div>
+            <div class="form-group">
+                <select class="form-control">
+                    <option>State</option>
+                    <option>KARNATAKA</option>
+                    <option>KERALA</option>
+                    <option>MAHARASTRA</option>
+                    <option>TAMILNADU</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select class="form-control">
+                    <option>City</option>
+                    <optgroup label="KARNATAKA">
+                        <option value="Bengaluru">Bengaluru</option>
+                        <option value="Hampi">Hampi</option>
+                        <option value="Mysore">Mysore</option>
+                    </optgroup>
+                    <optgroup label="KERALA">
+                        <option value="Alappuzha">Alappuzha</option>
+                        <option value="Kochi">Kochi</option>
+                        <option value="Kottayam">Kottayam</option>
+                    </optgroup>
+                    <optgroup label="MAHARASHTRA">
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="pune">Pune</option>
+                        <option value="Thane">Thane</option>
+                    </optgroup>
+                    <optgroup label="TAMILNADU">
+                        <option value="Chennai">Chennai</option>
+                        <option value="Madurai">Madurai</option>
+                        <option value="Selam">Selam</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Confirm Password">
+            </div>
+            <button type="button" class="btn">Submit</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

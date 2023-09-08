@@ -1,0 +1,191 @@
+<html>
+<head>
+    <title>Home</title>
+	<style>
+	
+
+/* Style the header */
+header {
+    background-color: maroon;
+    color: #fff;
+    padding: 10px;
+}
+.logo img {
+    height: 50px; /* height of logo */
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    margin-right: 20px;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* content */
+main {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 10px auto;
+}
+
+/* Style the footer */
+footer {
+    background-color: maroon;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    flex: 1;
+    text-align: left;
+}
+
+.social-icons {
+    flex: 1;
+    text-align: center;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.address {
+    flex: 1;
+    text-align: right;
+}
+
+/* Style the slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Style the slideshow images */
+.mySlides {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+}
+
+/* Create a simple slideshow */
+.mySlides:first-child {
+    display: block;
+	
+}
+.icon {
+    width: 30px; /* Change the size as needed */
+    height: auto;
+    margin-right: 10px; /* Add some spacing between icons if desired */
+}
+	</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/freshlogo.jpg" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="aboutres.html">ABOUT US</a></li>
+                <li><a href="loginres.html">SIGN IN</a></li>
+                <li><a href="registerres.html">SIGN UP</a></li>
+                <li><a href="contactres.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="photo1.jpg" alt="Slide 1" >
+            </div>
+            <div class="mySlides fade">
+                <img src="img/photo2.jpg" alt="Slide 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/photo3.jpg" alt="Slide 3">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/photo4.jpg" alt="Slide 4">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/photo5.jpg" alt="Slide 5">
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="copyright">
+                &copy; 2023 Your Company Name. All rights reserved.
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="img/facebook.png" alt="Facebook" width="30" height="30"></a>
+                <a href="#"><img src="img/twitter.png" alt="Twitter" width="30" height="30"></a>
+                <a href="#"><img src="img/instagram.jpg" alt="Instagram" width="30" height="30"></a>
+                <!-- Add more social icons as needed -->
+            </div>
+            <div class="address">
+                abc nagar, Kochi, 784658<br>
+                Email: freshshop@gmail.com<br>
+                Phone:tel:+1-888705770
+            </div>
+        </div>
+    </footer>
+	  <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change slide every 2 seconds (adjust as needed)
+        }
+
+        // Initial call to start the slideshow
+        showSlides();
+    </script>
+</body>
+</html>
